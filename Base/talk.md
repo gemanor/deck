@@ -1,5 +1,5 @@
 theme: Plain Jane
-footer: ![inline 87%](footer.png)
+footer: ![inline 87%](media/footer.png)
 slide-transition: true
 
 [.header: alignment(left)]
@@ -14,7 +14,7 @@ slide-transition: true
 
 [.footer: ]
 [.header: alignment(left)]
-![left fit](me.jpg)
+![left fit](media/me.jpg)
 
 <br>
 <br>
@@ -29,7 +29,7 @@ slide-transition: true
 
 [.header: alignment(left)]
 
-![right 30%](opal.png)
+![right 30%](media/opal.png)
 
 <br>
 <br>

@@ -1,44 +1,68 @@
 theme: Plain Jane
 footer: ![inline 87%](media/footer.png)
 slide-transition: true
+header-emphasis: color(#9B5EE5)
 
 [.header: alignment(left)]
-[.hide-footer]
 
-![](media/opening.jpg)
+^I'm lucky that it is virtual because if not, you'll bite me for using Shift Left
 
+<br>
+
+![inline left 50%](media/agile_and_beyond_logo.png)
+# Application Code of Conduct – Full Stack Policy as Code
+## Gabriel L. Manor
 
 ---
 
+
 ^ My name is Gabriel and I'm happy to be with you. First covid, then AI
 
-TBD diagram of last years in human coding
-
+> AI Is Going to Replace Us
+-- Every Developer in 2023
 
 
 ---
 
 ^ AI will not replace us
 
-TBD find the linkedin post
+![fit 100%](media/ai_meme.jpeg)
 
 ---
 
 ^ We should be focused in the business value we deliver, not the technical value
 
-TBD business value 80%/20%
+[.header: alignment(left)]
+# Agile New Mission
+
+![inline](media/agile_new_mission.png)
 
 ---
 
-^ Access control as a case study
+^ Case study, access control in the application level
 
-TBD think of diagram
+## _Case Study_
+# Application-Level Access Control
+
+---
+
+|  | Authentication | Authorization |
+| --- | --- | --- |
+| Definition | Verifies the identity of a user or system. | Determines what a user or system can do. |
+| Purpose | Grants access to the system. | Controls access to resources. |
+| Focus | "Who you are." | "What you can do." |
+| Process | Verifies credentials (e.g., username/password). | Checks permissions and privileges. |
+| Examples | Logging in with a username and password. | Granting read or write access to a file. |
+| Goal | Establishes trust and identity. | Ensures appropriate access and usage. |
+| Applied to | Users, systems, or devices. | Resources, data, or functionalities. |
+| Scope | Typically performed once per session. | Performed for every access attempt. |
+
 
 ---
 
 ^ We already out source authentication
 
-TBD Logos and authn functionallity
+![inline 60%](media/authn_providers.png)
 
 ---
 
@@ -70,13 +94,6 @@ if (!allowed(
     return;
 }
 ```
-
----
-
-
-^ Why would you teach us about broken access control?
-
-![inline](media/whyou.png)
 
 ---
 
@@ -196,12 +213,6 @@ Instead of designing the permissions model, implementing it independly to the ap
 
 # ~~Implement RBAC to Application~~
 # Enforce Permissions in Applications
-
----
-
-^ We need to learn better what to do as MVP and what to do as infrastructure
-
-TBD balancing diagram
 
 ---
 
@@ -393,9 +404,9 @@ const Document = () => {
 
 ^ You are tired of problems, right? Let's find together a new way to implement authorization.
 
-# [fit] Authorization Top 5 Best-Practices
+[.build-lists:true]
 
-TBD add build to the list 
+# [fit] Authorization Top 5 Best-Practices
 
 - Agnostic to the permissions model
 - Seperate policy from code
@@ -831,14 +842,14 @@ ability.can('read', 'Post') // true
 
 ---
 
+^ What we learned?
+
 [.header: alignment(left)]
 
-![right 30%](media/opal.png)
+![left 100%](media/community_qr.png)
 
 <br>
 <br>
 # Thank You :pray:
-## Show your love to OPAL with a GitHub Star :star: :point_right:
-### Find more about OPAL on opal.ac
-#### Follow me on Twitter @gemanor
-TBD join the community
+## Let's keep in touch at our Authorization Community
+## _io.permit.io/chat\_with\_gabriel_

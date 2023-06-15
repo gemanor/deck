@@ -1,0 +1,253 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "line",
+      "version": 534,
+      "versionNonce": 2132215232,
+      "isDeleted": false,
+      "id": "BisJVMrf4qQf3JyR7JQwh",
+      "fillStyle": "cross-hatch",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 846.4853969488399,
+      "y": 454.500250317622,
+      "strokeColor": "#000000",
+      "backgroundColor": "#ced4da",
+      "width": 160.88737963171127,
+      "height": 139.33262287322358,
+      "seed": 685074847,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1686586338946,
+      "link": null,
+      "locked": false,
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": null,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          80.44368981585563,
+          139.33262287322358
+        ],
+        [
+          -80.44368981585563,
+          139.33262287322358
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "type": "rectangle",
+      "version": 942,
+      "versionNonce": 1712666176,
+      "isDeleted": false,
+      "id": "3Zn5tSjcbuTLY19VIPEza",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0.058619259710729565,
+      "x": 522.7357231332105,
+      "y": 446.2402153245004,
+      "strokeColor": "#000000",
+      "backgroundColor": "#868e96",
+      "width": 647.48046875,
+      "height": 16.441419368198353,
+      "seed": 1753753393,
+      "groupIds": [],
+      "roundness": {
+        "type": 3
+      },
+      "boundElements": [],
+      "updated": 1686586338946,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "ellipse",
+      "version": 399,
+      "versionNonce": 430984640,
+      "isDeleted": false,
+      "id": "PGbErMIllFCJnkKz1au5R",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 2,
+      "opacity": 100,
+      "angle": 0,
+      "x": 830.6484375,
+      "y": 437.390625,
+      "strokeColor": "#000000",
+      "backgroundColor": "#000000",
+      "width": 32.140625,
+      "height": 32.140625,
+      "seed": 2064683071,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [],
+      "updated": 1686586338946,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "Wr-vbayc52Uz69foDHnTK",
+      "type": "ellipse",
+      "x": 1033.823161600457,
+      "y": 307.4616265543518,
+      "width": 177,
+      "height": 157,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "seed": 1394161088,
+      "version": 159,
+      "versionNonce": 1207088576,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "DmuB3hMJGse9nxsWwTJCq"
+        }
+      ],
+      "updated": 1686586343142,
+      "link": null,
+      "locked": false
+    },
+    {
+      "id": "DmuB3hMJGse9nxsWwTJCq",
+      "type": "text",
+      "x": 1065.6242697540217,
+      "y": 360.95374423120785,
+      "width": 113.23988342285156,
+      "height": 50,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "roundness": null,
+      "seed": 1642319296,
+      "version": 186,
+      "versionNonce": 1580244544,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1686586343177,
+      "link": null,
+      "locked": false,
+      "text": "Autonomous\nlifecycle",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "baseline": 43,
+      "containerId": "Wr-vbayc52Uz69foDHnTK",
+      "originalText": "Autonomous lifecycle",
+      "lineHeight": 1.25
+    },
+    {
+      "type": "ellipse",
+      "version": 391,
+      "versionNonce": 1517528640,
+      "isDeleted": false,
+      "id": "GZ9zTWa9r_B8-V9httzOe",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 495.95597410045707,
+      "y": 276.1920953043518,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 177,
+      "height": 157,
+      "seed": 1786949056,
+      "groupIds": [],
+      "roundness": {
+        "type": 2
+      },
+      "boundElements": [
+        {
+          "type": "text",
+          "id": "Sl8NCslFIZa7ubGv0SJOm"
+        }
+      ],
+      "updated": 1686586405403,
+      "link": null,
+      "locked": false
+    },
+    {
+      "type": "text",
+      "version": 441,
+      "versionNonce": 1957748160,
+      "isDeleted": false,
+      "id": "Sl8NCslFIZa7ubGv0SJOm",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "angle": 0,
+      "x": 532.5370734039242,
+      "y": 329.68421298120785,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "width": 103.67990112304688,
+      "height": 50,
+      "seed": 1768355264,
+      "groupIds": [],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1686586405403,
+      "link": null,
+      "locked": false,
+      "fontSize": 20,
+      "fontFamily": 1,
+      "text": "Developer \nExperience",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "GZ9zTWa9r_B8-V9httzOe",
+      "originalText": "Developer Experience",
+      "lineHeight": 1.25,
+      "baseline": 43
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

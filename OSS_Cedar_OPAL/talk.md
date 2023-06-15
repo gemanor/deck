@@ -5,44 +5,50 @@ header-emphasis: color(#9B5EE5)
 
 [.header: alignment(left)]
 
+^I'm lucky that it is virtual because if not, you'll bite me for using Shift Left
+
 <br>
-<br>
-<br>
-# Deck Title TBD title
+
+![inline left 75%](media/oss.png)
+# Continuous Access Control with OPAL and Cedar
 ## Gabriel L. Manor
 
 ---
 
-^ AppSec tools has a movement from inspecting application to inspect the code that run them
-Security confrences sponsorships as an example
-
-TBD screenshots of companies back in 2015 and now / sponsorship midjourney
-
----
-
-^ This is probably part of the Shift Left movement
-We need to continue the movement
+^ What is shift left? let the audience answer
 
 # _Shift_ Left
 
 ---
 
-^ The next phase of shift left is influecning software product over inspecting them
+^ I asked ChatGPT, look at the measures it is not the right thing. Measure create antgonism between the teams, it's not the right thing
 
-# Influence over Inspect
+<br>
 
-TBD midjouerny - check spelling of influencing/inspeting
-
----
-
-^ The way software development goes, is teams that focused on functionl domain expertise. 
-Software development with orientation to security should be owned by security teams
-
-TBD iceberg diagram
+> _Shift_ left in security refers to _integrating_ security practices and considerations earlier in the software development lifecycle, emphasizing proactive _measures_ and reducing vulnerabilities.
+-- ChatGPT
 
 ---
 
-^ Access control is an example of what we should influence teams.
+^ Looking at this picture, non of that tools are influence the software development, they are just measure it
+
+![inline 80%](media/devsecops.png)
+
+---
+
+^ The next phase of shift left is influecning software product over measure them
+
+# ~~Measure~~
+# Influence
+
+---
+
+^ Case study, access control in the application level
+
+## _Case Study_
+# Application-Level Access Control
+
+---
 
 [.footer: ]
 [.header: alignment(left)]
@@ -62,7 +68,7 @@ TBD iceberg diagram
 ^ Authentication is already in a good state from the security prespective. 
 The code is not change often and can easly done by 3rd party products.
 
-TBD authentication screenshot of tools
+![inline 60%](media/authn_providers.png)
 
 ---
 
@@ -187,9 +193,12 @@ const Document = () => {
 
 ^ This is not influenced by security, is influenced by implementation
 
-# Influenced by Implementation
+# Implement RBAC to an Application
 
-TBD picture of RBAC picutre
+---
+
+# ~~Implement RBAC to an Application~~
+# Enforce Permissions in Applications
 
 ---
 
@@ -365,21 +374,38 @@ const Document = () => {
 ---
 
 ^ The good authorization system life cycle, should influenced by secuirty
+* Posture
+* Compliance
+* External functions
 
-Authorization life cycle diagram TBD
+[.header: alignment(left)]
+## The Autonomous Authorization Lifecycle
+
+<br>
+
+![fit 42% original](media/policy_lifecycle.png)
 
 ---
 
 ^ We also need to worry for DevEx, they will not use it if we have stuff like that
 Decouple policy from code while keeping developers easy
 
-TBD DevEx - Do once, do more (balancing diagram?)
+[.build-lists: true]
+[.header: alignment(left)]
+# Security 🤝 DevEx
 
----
+[.column]
+* Cross-platform enforcement
+* Performance-aware system
+* Zero-effort deployment
+* Decentralized architecture
+* Seamless data and configuration syncing
 
-^ Data and configuration consitency
+[.column]
 
-Always awake meme TBD
+<br>
+
+![fit](media/devex_balance.png)
 
 ---
 
@@ -396,7 +422,6 @@ Always awake meme TBD
 ---
 
 ^ Everything starts with contract
-
 ^ As always, every better software solution, start with a contract. contracts are the best way to make software better, and what better of designing a contract of how to configure policies?
 
 # [fit] Contracts Creates Better Relationships
@@ -520,6 +545,63 @@ pet_is_adopted if data.pet_attributes[input.resource].adopted == true
 
 ---
 
+^ Google Zanzibar is a standard created by Google for their scalable systems they need. I mostly like the implementation of OpenFGA to it, but it's not a contract, it's an implementation.
+
+![inline](media/zanzibar.png)![inline](media/zanzibarcode.png)
+
+---
+
+OpenFGA Implementation
+
+![right 35%](media/openfga.mp4)
+
+
+```json
+{
+  "schema_version": "1.1",
+  "type_definitions": [{
+      "type": "user"
+    }, {
+      "type": "document",
+      "relations": {
+        "reader": {"this": {}},
+        "writer": {"this": {}},
+        "owner": {"this": {}}
+      },
+      "metadata": {
+        "relations": {
+          "reader": {
+            "directly_related_user_types": [{"type": "user"}]
+          },
+          "writer": {
+            "directly_related_user_types": [{"type": "user"}]
+          },
+          "owner": {
+            "directly_related_user_types": [{"type": "user"}]
+          }
+        }
+      }
+    }
+  ]
+}
+```
+
+---
+
+^ Google Zanzibar pros and cons
+
+[.header: alignment(left)]
+# Google Zanzibar - OpenFGA
+
+* Simple ReBAC
+* Complex RBAC/ABAC
+* Reverse indices support
+* Backed by OKTA
+* Stateful
+
+---
+
+
 ^ AWS Cedar is a policy engine and language that was created by AWS, it's a general purpose policy engine that can be used to enforce authorization policies in microservices architecture.
 
 ![inline 70%](media/cedar.png)
@@ -579,78 +661,24 @@ when {
 
 ---
 
-^ Google Zanzibar is a standard created by Google for their scalable systems they need. I mostly like the implementation of OpenFGA to it, but it's not a contract, it's an implementation.
+^ Cedar is the balance between search based and zanzibar
+* Support one level of reverse indices
+* Can store data in edge
 
-![inline](media/zanzibar.png)![inline](media/zanzibarcode.png)
-
----
-
-OpenFGA Implementation
-
-![right 35%](media/openfga.mp4)
-
-
-```json
-{
-  "schema_version": "1.1",
-  "type_definitions": [{
-      "type": "user"
-    }, {
-      "type": "document",
-      "relations": {
-        "reader": {"this": {}},
-        "writer": {"this": {}},
-        "owner": {"this": {}}
-      },
-      "metadata": {
-        "relations": {
-          "reader": {
-            "directly_related_user_types": [{"type": "user"}]
-          },
-          "writer": {
-            "directly_related_user_types": [{"type": "user"}]
-          },
-          "owner": {
-            "directly_related_user_types": [{"type": "user"}]
-          }
-        }
-      }
-    }
-  ]
-}
-```
-
-
----
-
-^ Google Zanzibar pros and cons
-
-[.header: alignment(left)]
-# Google Zanzibar - OpenFGA
-
-* Simple ReBAC
-* Complex RBAC/ABAC
-* Reverse indices support
-* Backed by OKTA
-* Stateful
-
----
-
-^ Cedar has the benefits of being the best for application-level
-
-TBD
+# Cedar
+## Best of Both Worlds
 
 ---
 
 ^ The three principles that Cedar follows
 
 [.header-emphasis: color(#9B5EE5)]
+
 # [fit] Does _[User]_ Allowed to Perform _[Action]_ on _[Resource]_
-# [fit] Does a Monkey Allowed to Eat a Banana
+# [fit] Is a Monkey Allowed to Eat a Banana
 
-TBD english
 
-```javascript
+```rust
 permit(
     principal,
     action,
@@ -660,15 +688,12 @@ permit(
 
 ---
 
-^ The balance between search based and zanzibar
-
-TBD diagram
-
----
-
 ^ Cedar entity format
 
+[.header: alignment(left)]
 # Cedar Entities
+
+[.column]
 
 ```json
 ...
@@ -688,11 +713,49 @@ TBD diagram
 ...
 ```
 
+[.column]
+
+```json
+...
+{
+    "attrs": {},
+    "parents": [],
+    "uid": {
+        "id": "article",
+        "type": "ResourceType"
+    }
+},
+{
+    "attrs": {},
+    "parents": [],
+    "uid": {
+        "id": "put",
+        "type": "Action"
+    }
+},
+...
+```
+
+[.column]
+
+```json
+...
+{
+    "attrs": {},
+    "parents": [],
+    "uid": {
+        "id": "admin",
+        "type": "Role"
+    }
+},
+...
+```
+
 ---
 
 ^ Policy lifecycle and the Cedar related implementations
 
-TBD cedar diagram
+![fit](media/lifecycle_cedar.png)
 
 ---
 
@@ -700,8 +763,10 @@ TBD cedar diagram
 
 # Cedar Agent
 
-TBD picture of Cedar Agent
+[.column]
+![fit](media/cedar_agent_qr.png)
 
+[.column]
 * Policy decision maker
 * Decentralized continer, run as a sidecar to applications
 * Monitored and audited
@@ -732,6 +797,11 @@ TBD picture of Cedar Agent
 ^ Sync engine - OPAL
 
 # OPAL - Open Policy Administration Layer
+
+[.column]
+![inline](media/opal_diagram.png)
+
+[.column]
 * Sync decision points with data and policy stores
 * Auto-scale for engines
 * Centralized services such as Audit
@@ -779,6 +849,14 @@ const response = await fetch('http://host.docker.internal:8180/v1/is_authorized'
 
 ---
 
+# A Cedar-Based Authorization System
+
+![inline 25%](media/arch_with_logos.png)
+
+
+---
+
+
 # Demo time 🍿
 
 ---
@@ -790,12 +868,9 @@ const response = await fetch('http://host.docker.internal:8180/v1/is_authorized'
 
 [.header: alignment(left)]
 
-![right 30%](media/opal.png)
+![right 100%](media/cedar_agent_qr.png)
 
 <br>
 <br>
 # Thank You :pray:
-## Show your love to OPAL with a GitHub Star :star: :point_right:
-### Find more about OPAL on opal.ac
-#### Follow me on Twitter @gemanor
-TBD star cedar
+## Show your love to Cedar-agent with a GitHub Star :star: :point_right:

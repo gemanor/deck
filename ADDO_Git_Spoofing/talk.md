@@ -1,5 +1,5 @@
 theme: Plain Jane
-footer: ![inline 42.7%](media/footer.png)
+footer: ![inline 42.7%](../Base/media/footer.png)
 slide-transition: true
 
 [.header: alignment(left)]

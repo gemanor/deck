@@ -1,6 +1,7 @@
 theme: Plain Jane
-footer: ![inline 42.7%](../Base/media/footer.png)
+footer: ![inline 58.5%](../Base/media/footer.png)
 slide-transition: true
+build-list: true
 
 [.header: alignment(left)]
 
@@ -8,9 +9,11 @@ slide-transition: true
 <br>
 <br>
 # Git Commit Spoofing in Open Source<br>No False Alarm
-## Gabriel L. Manor - All Day DevOps 2023
+## Gabriel L. Manor @ Permit.io Meet & Greet, January 2024
 
 ---
+
+[.header: alignment(center)]
 
 # Social Media Overflow Attack
 
@@ -44,6 +47,8 @@ c
 ![fit](media/its_not_a_bug.jpeg)
 
 ---
+
+[.header: alignment(center)]
 
 # Git Phising
 
@@ -80,6 +85,8 @@ Source: https://io.permit.io/pretendabot
 
 ^ First problem with Git - collaboration vs security
 
+[.header: alignment(center)]
+
 # Collaboration *vs.* Security
 
 ---
@@ -105,6 +112,8 @@ Source: https://io.permit.io/pretendabot
 - Nothing
 
 ---
+
+[.header: alignment(center)]
 
 # Public *!=* Open
 
@@ -132,6 +141,16 @@ Source: https://io.permit.io/daimler-git
 
 ---
 
+![fit 100%](media/mercedes_car.jpg)
+
+---
+
+![inline](media/mercedes.png)
+
+Source: https://io.permit.io/mercedes-fail-again
+
+---
+
 ^ Supply chain vector - codecov breach
 
 # Supply Chain Attack - Codecov Breach
@@ -140,9 +159,13 @@ Source: https://io.permit.io/daimler-git
 
 ---
 
+[.header: alignment(center)]
+
 # Should We Stop Using Git?
 
 ---
+
+[.header: alignment(center)]
 
 # Should We Stop Using Planes?
 
@@ -310,6 +333,8 @@ Access is limited
 
 ---
 
+[.header: alignment(center)]
+
 # **Never**
 # Use a Self-Installed Git Server
 
@@ -332,7 +357,7 @@ Access is limited
 
 ^ Aqua security tool exmaple
 
-![](media/demo.gif)
+Video demo
 
 ---
 
@@ -363,6 +388,19 @@ github.com/step-security
 ---
 
 ![original 180%](media/tf_example.png)
+
+---
+
+```go
+default allow := false
+
+allow if {
+	some grant in user_is_developer
+
+	input.action == operation.type
+	input.environment == operation.destination
+}
+```
 
 ---
 

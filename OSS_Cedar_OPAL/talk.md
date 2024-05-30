@@ -197,7 +197,7 @@ const Document = () => {
 
 ---
 
-# ~~Implement RBAC to an Application~~
+# [fit] ~~Implement RBAC to an Application~~
 # Enforce Permissions in Applications
 
 ---

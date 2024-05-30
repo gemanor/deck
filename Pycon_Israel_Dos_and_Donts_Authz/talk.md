@@ -1,6 +1,7 @@
 theme: Plain Jane
-footer: ![inline 61.2%](../Base/media/footer.png)
-slide-transition: true
+footer: ![inline 58.5%](../Base/media/footer.png)
+slide-transition: push(bottom)
+autoscale: true
 [.code: auto(32)]
 
 [.header: alignment(left)]
@@ -8,8 +9,8 @@ slide-transition: true
 <br>
 <br>
 <br>
-# Building Authorization with Python: Dos and Don’ts
-## Gabriel L. Manor @ PyCon Israel 2023
+# [fit] Building Authorization with Python: Dos and Don’ts
+## Gabriel L. Manor @ Conf42 Python 2024
 
 ---
 
@@ -328,7 +329,6 @@ if user.role == 'admin':
 
 # Authorization Best Practices
 
-
 [.column]
 
 📜
@@ -360,6 +360,8 @@ Unified
 Easy to audit
 
 ---
+
+[.header: alignment(center)]
 
 # #1 Model
 
@@ -444,11 +446,15 @@ Not scalable, usually used in low-performance appliances
 
 ---
 
+[.header: alignment(center)]
+
 # #2 Author
 
 ---
 
 ^ As always, every better software solution, start with a contract. contracts are the best way to make software better, and what better of designing a contract of how to configure policies?
+
+[.header: alignment(center)]
 
 # [fit] Contracts Creates Better Relationships
 
@@ -458,6 +464,8 @@ Not scalable, usually used in low-performance appliances
 ---
 
 ^ Today we will cover three permissions contracts that together can solve any kind of authorization problem.
+
+[.header: alignment(center)]
 
 <br>
 
@@ -531,6 +539,8 @@ when {
 
 ---
 
+[.header: alignment(center)]
+
 # #3 Analyze
 
 ---
@@ -549,6 +559,8 @@ when {
 * Focused in getting very fast decisions >10ms
 
 ---
+
+[.header: alignment(center)]
 
 # #4 Enforce
 
@@ -574,7 +586,9 @@ allowed = requests.post('http://host.docker.internal:8180/v1/is_authorized', jso
 
 ---
 
-![inline fit](media/nonsense.png)
+[.header: alignment(center)]
+
+# #5 Event Driven Authorization
 
 ---
 

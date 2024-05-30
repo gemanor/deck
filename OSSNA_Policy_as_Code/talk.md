@@ -1,12 +1,15 @@
 theme: Plain Jane
-footer: ![inline 61.2%](../Base/media/footer.png)
+footer: ![inline 58.5%](media/footer.png)
 slide-transition: true
 
+
 [.header: alignment(left)]
-[.hide-footer]
 
-![](media/opening.jpg)
-
+<br>
+<br>
+<br>
+# [fit] Application Code of Conduct - Full Stack Policy as Code
+## Gabriel L. Manor @ DDD London, January 2024
 
 ---
 
@@ -47,6 +50,10 @@ After having the elite status, you can get to statusmatcher.com and find your ch
 ^ The problem is their registration page is actually open to all the Amex card holders, they verify the card number but not the card type
 
 ![inline](media/status_match.png)
+
+---
+
+![fit](media/linkedin.jpg)
 
 ---
 
@@ -114,16 +121,6 @@ A meme of tired developer
 
 ---
 
-![inline 50%](media/happt_dev.png)
-
----
-
-^ Why would you teach us about broken access control?
-
-![inline](media/whyou.png)
-
----
-
 ^ My name is Gabriel, Unfortunatly my last couple of years was around Authorization ___
 
 
@@ -140,12 +137,6 @@ A meme of tired developer
 ### Director of DevRel @ Permit.io
 #### 🏅 Struggling with authorization for the last 8y
 ##### Not an ethical hacker, zero awards winner, dark mode hater.
-
----
-
-^ Let's start with a story about Jessie, he is a full stack developer that was assigned to this ticket
-
-![fit](media/joe.png)
 
 ---
 
@@ -345,7 +336,7 @@ Not scalable, usually used in low-performance appliances
 
 ---
 
-^ Now that Jessie is happy with the understanding of the need in ABAC model, he redesing the middleware in the application so it support the new model, and he is happy again.
+^ Now that Jessie is happy with the understanding of the need in ABAC model, he redesign the middleware in the application so it support the new model, and he is happy again.
 
 ```javascript
 // Middleware
@@ -369,12 +360,6 @@ const Document = () => {
     ...
 }
 ```
-
----
-
-^ But a week after, a bug came, a user get access to a resource he is not aimed to.
-
-![inline](media/sneaking.png)
 
 ---
 
@@ -436,7 +421,7 @@ const Document = () => {
 
 ^ Jessie is already tired of their needs in stable authorization infrastructure, he is now trying to get better (And already got a promotion for their solution) but a new requirement came, support multiple stacks.
 
-# Jessie's New Stack
+# Authorization Developer New Stack
 
 * 👺 DevOps
 * Frontend
@@ -449,7 +434,7 @@ const Document = () => {
 
 ^ Last but not least, but then come all the other problems, but the most hard one is the performance. The authorization is now a bottleneck in the application, and Jessie need to find a way to make it faster.
 
-# Jessie's New Skillset
+# Authorization Developer New Skillset
 
 * 🚀 Performance
 * 📈 Monitoring
@@ -461,7 +446,7 @@ const Document = () => {
 
 ^ Jessie fix the bug, but a some time after, a new requirement came, add the same policy to a new application. This seems to be related to the previous, but even Jessie we're actually migrate the policy.
 
-# Jessie's New Headache 🤕
+#[fit] Authorization Developer New Headache 🤕
 
 * Compliance
 * Posture
@@ -473,13 +458,17 @@ const Document = () => {
 
 ^ You are tired of problems, right? Let's find together a new way to implement authorization.
 
-# [fit] Authorization Top 5 Best-Practices
+# [fit] Authorization DDD Best-Practices
 
 - Agnostic to the permissions model
 - Seperate policy from code
 - Support the whole stack
 - Performance and monitoring features
 - Unified policy management
+
+---
+
+![100%](media/DDD_architecture.png)
 
 ---
 
@@ -901,14 +890,6 @@ ability.can('read', 'Post') // true
 
 ---
 
-# Demo time 🍿
-
----
-
-![](media/permit_diagram.png)
-
----
-
 [.header: alignment(left)]
 
 ![right 30%](media/opal.png)
@@ -918,5 +899,4 @@ ability.can('read', 'Post') // true
 # Thank You :pray:
 ## Show your love to OPAL with a GitHub Star :star: :point_right:
 ### Find more about OPAL on opal.ac
-#### Follow me on Twitter @gemanor
 

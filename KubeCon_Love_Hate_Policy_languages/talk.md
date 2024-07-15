@@ -9,7 +9,7 @@ autoscale: true
 <br>
 <br>
 # [fit] The Future of Authorization in Applications
-## Gabriel L. Manor @ DevDays Lithuania 2024
+## Gabriel L. Manor
 
 ---
 
@@ -958,9 +958,5 @@ type user
 
 ---
 
-![right 80%](media/feedback.png)
-
---
 # Thank You :pray:
-## Share Your Thoughts and Get the Slides 👉
-### Join OPAL Slack Community *io.permit.io/opal-slack*
+#[fit] Join OPAL Slack Community *io.permit.io/opal-slack*
